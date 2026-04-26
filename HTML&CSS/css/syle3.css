@@ -1,0 +1,50 @@
+ul{
+    /* list-style-type:none;
+    list-style-type: disc;
+    list-style-type:circle;
+    list-style-type:square; */
+    /* decrease image size */
+    /* list-style-image: url("../media/star.png"); */
+    /* list-style-position: inside; */
+    /* list-style-position: inside; */
+    list-style:inside circle;
+
+
+
+}
+ol{
+    list-style-type:decimal;
+    list-style-type:decimal-leading-zero;
+    list-style-type:lower-alpha;
+    list-style-type:upper-alpha;
+    list-style-type:lower-roman;
+    list-style-type:upper-roman;
+}
+
+/* li comman so it is apply for ordered and unorderlist */
+li{
+  margin:10px;
+}
+
+table{
+    width:300px;
+    margin:auto;
+    border-spacing:10px 20px;  /* 2 box within gab increase */
+     /* border-collapse:collapse; */
+}
+th{
+    text-transform:uppercase;
+    text-align:left;
+    border-bottom:2px solid black;
+    padding:10px;
+}
+td{
+    padding:10px;
+    border:1px solid black;
+}
+.amt{
+    text-align:right;
+}
+tr:nth-child(even){
+    background-color:whitesmoke;
+}

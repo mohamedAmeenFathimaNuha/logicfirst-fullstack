@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>PALINDROME CHECKER</title>
+</head>
+<body>
+    <div id="wrapper">
+        <h2>PALINDROME CHECKER</h2>
+        <div class="inputdiv">
+            <input type="text" id="input" placeholder="ENTER SENTENCE">
+        </div>
+        <div>
+            <button type="submit" onclick='check()'>Check</button>
+        </div>
+        <div id="result">
+
+        </div>
+    </div>
+    <script>
+        function check() {
+            const input = document.getElementById("input").value;
+            const str1 = input.toLowerCase().replace(/[^a-z0-9]/g, ''); // remove spaces/symbols
+            const str2 = str1.split('').reverse().join('');
+            
+            let result = document.getElementById("result");
+
+            if (str1 === str2 && str1 !== "") {
+                result.innerHTML = "✅ It is a palindrome!";
+            } else {
+                result.innerHTML = "❌ It is not a palindrome.";
+            }
+        }
+
+       
+    </script>
+</body>
+</html>

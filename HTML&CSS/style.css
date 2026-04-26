@@ -1,0 +1,48 @@
+/* Adjacent Sibling Selector */
+h2+h3{
+    color:lightsalmon ;
+}
+
+/*TYpe Selector*/
+h1,h2,h3{
+    color: aqua;
+}
+
+h1{
+    color: black;
+}
+
+/*Unvirsal Selector*/
+*{
+    color: blue;
+}
+
+body{
+    color: violet;
+}
+
+/*Id Selector*/
+#softdev{
+    color:red;
+}
+
+/*class Selector*/
+.purpleText{
+    color:purple
+}
+
+/* Child Selector */
+div>p{
+    color:black;
+}
+
+/* Descendant Selector */
+div a{
+    color:greenyellow;
+}
+
+/* Sibling Selector */
+h1~h4{
+    color:lightgreen
+}
+

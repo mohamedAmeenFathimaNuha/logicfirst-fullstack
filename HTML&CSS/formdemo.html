@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="signupresult.html" method="get" enctype="multipart/form-data">
+        <!-- multi parth send detail becase here have file also convery to servey server ready for all-->
+    <div>
+        <label for="username">User Name</label>
+        <input type="text" name="username" id="username" value="Raj" required>
+    </div>
+    <div>
+        <label >PassWord
+        <input type="password" name="password" id="password" required>
+        </label>
+    </div>
+    <div>
+
+        <!-- <label for="lastname">Last Name</label> -->
+        <input type="text" name="lastname" id="lastname" placeholder="lastname" required>
+    </div>
+
+    <div>
+        <label for="yearofbirth">Year of Birth</label>
+        <input type="number" name="yearofbirth" id="yearofbirth" maxlength="4" min="1956" max="2025" step="10">
+
+    </div>
+    <div>
+        <label for="dateofbirth">Date of Birth</label>
+        <input type="date" name="dateofbirth" id="dateofbirth"  min="1900-10-19" max="01-12-2025" step="10">
+    </div>
+    <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
+    </div>
+    <div>
+        <!-- css okay text nox align panne -->
+        <label for="about">About</label>
+        <textarea name="about" id="about" cols="30" rows="4">About me...</textarea>
+    </div>
+    <div>
+       
+        <input type="checkbox" name="smsalert" id="smsalert">
+         <label for="smsalert">SMS Alert</label>
+
+    </div>
+    <div>
+        <input type="checkbox" name="emailalert" id="emailalert">
+        <label for="emailalert">Email Alert</label>
+    </div>
+    <div>
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="male">Male</label>
+    </div>
+    <div>
+        <!-- javaScript using froundend to backend information send -->
+         <!-- chachk chnage post and get using URL -->
+        <input type="hidden"  name="hidden" id="hidden" value="123">
+    </div>
+    <div>
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">Female</label>
+    </div>
+    <div>
+       <select name="state" id="state">
+            <option value="Tamil Nadu">Tamil Nadu</option>
+            <option value="Ap"> AP</option>
+            <option value="Kerla">Kerla</option>
+       </select> 
+        <!-- <select name="state" id="state" multiple>
+            <option value="Tamil Nadu">Tamil Nadu</option>
+            <option value="Ap"> AP</option>
+            <option value="Kerla">Kerla</option>
+       </select>     -->
+    </div>
+    <button type="submit">Sign Up</button>
+    <button type="reset">Reset</button>
+    <div>
+        <label for="file">Resume</label>
+        <input type="file" id="file" name="file">
+    </div>
+    <div>
+        <input type="image"src="" width=" " height="">
+    </div>
+    </form>
+</body>
+</html>
