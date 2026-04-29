@@ -30,4 +30,35 @@ console.log(arr2)
 //map
 //map objects are collections of key-value pairs
 //A key in the map only occur once
-//key or value can be
+//key or value can be object or 2 same time object
+
+let map1=new Map()
+map1.set('a',1)
+map1.set('b',2)
+map1.set('a',3)
+console.log(map1)
+console.log(map1.size)
+console.log(map1.has('c'))
+
+map2.set('d',2)
+map2.set('e',3)
+
+for(let i of map1){
+    console.log(i);
+}
+
+for(let[k,v] of  map1){
+    console.log(v);
+    console.log(k);
+}
+for(let k of map1.keys(1)){
+    console.log(k)
+}
+map2.forEach((v,k) => {
+    console.log('key',k,'value',v)
+})
+
+//2d array
+let kvArray=[['a',1],['b',2]]
+let map2=new map1(kvArray)
+console.log(map2)
